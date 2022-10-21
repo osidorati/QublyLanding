@@ -1,5 +1,6 @@
 # QublyLanding
 Just landing page with animation and adaptation for different devices.
+
 Landing page с адаптацией под разные устройства и анимацией.
 
 ***DEPLOY:*** https://osidorati.github.io/QublyLanding/
