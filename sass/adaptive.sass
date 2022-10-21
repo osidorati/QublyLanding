@@ -1,0 +1,266 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+	.main_banner
+		padding: 170px 0 220px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	.main_banner .mb_info > h1
+		font-size: 45px
+
+	.main_banner .mb_info > .descr
+		margin-bottom: 20px
+
+	.main_banner
+		padding: 100px 0
+
+	section
+		padding: 80px 0
+
+	#advantages .row_adv .item_adv > .heading
+		margin: 16px 0
+
+	#rewievs
+		padding: 170px 0
+
+	.pf_info
+		margin-bottom: 120px
+
+	#pre_footer .form_wrapper
+		margin: 0 auto
+
+	#footer .row_flex .col-footer_1
+		width: 48%
+		order: 2
+	#footer .row_flex .col_footer_3
+		width: 48%
+		order: 2
+
+	#footer .row_flex .col_footer_2
+		width: 100%
+		margin-bottom: 30px
+		order: 1
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	#header .inner_header .right_side_header > .btn_simple
+		display: none
+
+	#header .inner_header .right_side_header .mnu_top > li a
+		padding: 5px 30px 5px 0
+
+	#header .inner_header .right_side_header .mnu_top > li.has_sub_menu::after
+		right: 15px
+
+	.main_banner
+		padding: 50px 0 170px
+		.img_responsive
+			display: block
+			margin: 0 auto
+			max-width: 80%
+
+	.main_banner .mb_info > h1
+		font-size: 40px
+
+	section
+		padding: 60px 0
+
+	#advantages .heading_main h2
+		font-size: 34px
+
+	.row_adv
+		> div
+			width: 50%
+		.item_adv
+			text-align: center
+			max-width: 240px
+			margin: 0 auto
+
+	#advantages .row_adv .item_adv > .heading
+		margin: 10px 0
+		font-size: 22px
+
+	#advantages .row_adv .item_adv > .descr
+		font-size: 14px
+
+	section.information .img-responsive
+		display: none
+
+	section.information .right_info
+		padding: 0 10px
+		text-align: center
+		.notif
+			margin: 0 auto
+
+	section.information .right_info > h3, #pre_footer .pf_info > h4, #advantages .heading_main h2
+		font-size: 34px
+
+	#rewievs .rev_item > .quotes
+		font-size: 16px
+		height: 80px
+
+	#footer
+		padding: 30px 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	.hamburger
+		display: block
+
+	#header .inner_header .right_side_header
+		position: relative
+		padding-top: 0
+		.mnu_top
+			display: none
+			position: absolute
+			left: -150px
+			right: 0
+			top: 60px
+			width: auto
+			box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+			background-color: #ffffff
+			padding: 10px 0
+			z-index: 11
+			> li
+				display: block
+				> a
+					padding: 5px 15px
+				> .sub_menu
+					display: block
+					position: relative
+					top: auto
+					box-shadow: none
+					border-radius: 0
+					animation: none
+					padding-left: 15px
+
+	#header .inner_header .right_side_header .mnu_top > li.has_sub_menu::after
+		display: none
+
+	#to_banner
+		background-color: #F5FAFF
+		background: none !important
+		.main_banner
+			padding: 20px 0 40px
+
+	.notif
+		margin: 0 auto
+
+	.main_banner .mb_info
+		text-align: center
+		> h1
+			font-size: 30px
+
+	.main_banner .mb_info > .descr
+		font-size: 14px
+
+	.main_banner .mb_info > .btns
+		flex-wrap: wrap
+		> a
+			display: block
+			width: 100%
+		> .btn_white
+			margin: 0
+			margin-top: 10px
+
+	#advantages .notif
+		font-size: 14px
+
+	section
+		padding: 40px 0
+
+	#advantages .heading_main
+		margin: 25px 0
+		.description
+			font-size: 13px
+
+	section.information .right_info > h3, #pre_footer .pf_info > h4, #advantages .heading_main h2
+		font-size: 25px
+
+	.row_adv > div
+		width: 100%
+		margin-bottom: 30px
+		&:last-child
+			margin-bottom: 0
+
+	#rewievs
+		padding: 40px 0
+		background-size: inherit
+		.rev_item > .quotes
+			font-size: 13px
+			margin: 0 auto 10px
+		.rev_item > .name, .rev_item > .position
+			font-size: 13px
+		.line
+			margin: 20px 0
+		.nav_rev
+			justify-content: space-evenly
+			&:last-child
+				flex-grow: 1.5
+			&:nth-child(4)
+				flex-grow: 1.5
+			> div
+				width: 26%
+				margin-bottom: 10px
+
+	#footer
+		.mnu_footer_wrapper
+			flex-wrap: nowrap
+		b.heading
+			font-size: 12px
+		.mnu_footer_wrapper > .mnu_footer > ul > li > a
+			font-size: 10px
+			padding: 5px 0
+		.row_flex
+			flex-direction: column
+			align-items: center
+			.col_footer_3
+				order: 2
+			.col_footer_2
+				order: -1
+				margin-bottom: 0
+			.col-footer_1
+				order: 3
+				.logo_info > a
+					display: none
+		.copyright
+			margin-top: 40px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+/**/
+

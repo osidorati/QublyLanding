@@ -1,0 +1,265 @@
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .main_banner {
+    padding: 170px 0 220px; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .main_banner .mb_info > h1 {
+    font-size: 45px; }
+
+  .main_banner .mb_info > .descr {
+    margin-bottom: 20px; }
+
+  .main_banner {
+    padding: 100px 0; }
+
+  section {
+    padding: 80px 0; }
+
+  #advantages .row_adv .item_adv > .heading {
+    margin: 16px 0; }
+
+  #rewievs {
+    padding: 170px 0; }
+
+  .pf_info {
+    margin-bottom: 120px; }
+
+  #pre_footer .form_wrapper {
+    margin: 0 auto; }
+
+  #footer .row_flex .col-footer_1 {
+    width: 48%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+
+  #footer .row_flex .col_footer_3 {
+    width: 48%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+
+  #footer .row_flex .col_footer_2 {
+    width: 100%;
+    margin-bottom: 30px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #header .inner_header .right_side_header > .btn_simple {
+    display: none; }
+
+  #header .inner_header .right_side_header .mnu_top > li a {
+    padding: 5px 30px 5px 0; }
+
+  #header .inner_header .right_side_header .mnu_top > li.has_sub_menu::after {
+    right: 15px; }
+
+  .main_banner {
+    padding: 50px 0 170px; }
+    .main_banner .img_responsive {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%; }
+
+  .main_banner .mb_info > h1 {
+    font-size: 40px; }
+
+  section {
+    padding: 60px 0; }
+
+  #advantages .heading_main h2 {
+    font-size: 34px; }
+
+  .row_adv > div {
+    width: 50%; }
+  .row_adv .item_adv {
+    text-align: center;
+    max-width: 240px;
+    margin: 0 auto; }
+
+  #advantages .row_adv .item_adv > .heading {
+    margin: 10px 0;
+    font-size: 22px; }
+
+  #advantages .row_adv .item_adv > .descr {
+    font-size: 14px; }
+
+  section.information .img-responsive {
+    display: none; }
+
+  section.information .right_info {
+    padding: 0 10px;
+    text-align: center; }
+    section.information .right_info .notif {
+      margin: 0 auto; }
+
+  section.information .right_info > h3, #pre_footer .pf_info > h4, #advantages .heading_main h2 {
+    font-size: 34px; }
+
+  #rewievs .rev_item > .quotes {
+    font-size: 16px;
+    height: 80px; }
+
+  #footer {
+    padding: 30px 0; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .hamburger {
+    display: block; }
+
+  #header .inner_header .right_side_header {
+    position: relative;
+    padding-top: 0; }
+    #header .inner_header .right_side_header .mnu_top {
+      display: none;
+      position: absolute;
+      left: -150px;
+      right: 0;
+      top: 60px;
+      width: auto;
+      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      padding: 10px 0;
+      z-index: 11; }
+      #header .inner_header .right_side_header .mnu_top > li {
+        display: block; }
+        #header .inner_header .right_side_header .mnu_top > li > a {
+          padding: 5px 15px; }
+        #header .inner_header .right_side_header .mnu_top > li > .sub_menu {
+          display: block;
+          position: relative;
+          top: auto;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          border-radius: 0;
+          -webkit-animation: none;
+                  animation: none;
+          padding-left: 15px; }
+
+  #header .inner_header .right_side_header .mnu_top > li.has_sub_menu::after {
+    display: none; }
+
+  #to_banner {
+    background-color: #F5FAFF;
+    background: none !important; }
+    #to_banner .main_banner {
+      padding: 20px 0 40px; }
+
+  .notif {
+    margin: 0 auto; }
+
+  .main_banner .mb_info {
+    text-align: center; }
+    .main_banner .mb_info > h1 {
+      font-size: 30px; }
+
+  .main_banner .mb_info > .descr {
+    font-size: 14px; }
+
+  .main_banner .mb_info > .btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .main_banner .mb_info > .btns > a {
+      display: block;
+      width: 100%; }
+    .main_banner .mb_info > .btns > .btn_white {
+      margin: 0;
+      margin-top: 10px; }
+
+  #advantages .notif {
+    font-size: 14px; }
+
+  section {
+    padding: 40px 0; }
+
+  #advantages .heading_main {
+    margin: 25px 0; }
+    #advantages .heading_main .description {
+      font-size: 13px; }
+
+  section.information .right_info > h3, #pre_footer .pf_info > h4, #advantages .heading_main h2 {
+    font-size: 25px; }
+
+  .row_adv > div {
+    width: 100%;
+    margin-bottom: 30px; }
+    .row_adv > div:last-child {
+      margin-bottom: 0; }
+
+  #rewievs {
+    padding: 40px 0;
+    background-size: inherit; }
+    #rewievs .rev_item > .quotes {
+      font-size: 13px;
+      margin: 0 auto 10px; }
+    #rewievs .rev_item > .name, #rewievs .rev_item > .position {
+      font-size: 13px; }
+    #rewievs .line {
+      margin: 20px 0; }
+    #rewievs .nav_rev {
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
+      #rewievs .nav_rev:last-child {
+        -webkit-box-flex: 1.5;
+            -ms-flex-positive: 1.5;
+                flex-grow: 1.5; }
+      #rewievs .nav_rev:nth-child(4) {
+        -webkit-box-flex: 1.5;
+            -ms-flex-positive: 1.5;
+                flex-grow: 1.5; }
+      #rewievs .nav_rev > div {
+        width: 26%;
+        margin-bottom: 10px; }
+
+  #footer .mnu_footer_wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  #footer b.heading {
+    font-size: 12px; }
+  #footer .mnu_footer_wrapper > .mnu_footer > ul > li > a {
+    font-size: 10px;
+    padding: 5px 0; }
+  #footer .row_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #footer .row_flex .col_footer_3 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+    #footer .row_flex .col_footer_2 {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
+      margin-bottom: 0; }
+    #footer .row_flex .col-footer_1 {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3; }
+      #footer .row_flex .col-footer_1 .logo_info > a {
+        display: none; }
+  #footer .copyright {
+    margin-top: 40px; } }
+/* Custom, iPhone Retina */
+/* */
+/*==========  Mobile First  ========== */
+/* Custom, iPhone Retina */
+/* */
+/* Extra Small Devices, Phones */
+/* */
+/* Small Devices, Tablets */
+/* */
+/* Medium Devices, Desktops */
+/* */
+/* Large Devices, Wide Screens */
+/* */

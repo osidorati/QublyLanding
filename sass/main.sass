@@ -1,0 +1,578 @@
+@import "vars"
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+	&:focus
+		outline: none
+
+*::-webkit-input-placeholder
+	color: #c0c0c0
+	opacity: 1
+	font-family: $default-font
+
+*:-moz-placeholder
+	color: #c0c0c0
+	opacity: 1
+	font-family: $default-font
+
+*::-moz-placeholder
+	color: #c0c0c0
+	opacity: 1
+	font-family: $default-font
+
+*:-ms-input-placeholder
+	color: #c0c0c0
+	opacity: 1
+	font-family: $default-font
+
+*::placeholder, button
+	font-family: $default-font
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #000
+
+body input:required:valid,
+body textarea:required:valid
+	color: #000
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+img
+	max-width: 100%
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+/*btns*/
+
+.btn_simple
+	color: $accent
+	border: 1px solid $accent
+	font-weight: 600
+	padding: 6px 34px
+	transition: all .4s ease
+	text-decoration: none
+	border-radius: 20px
+
+	&:hover
+		background-color: $accent
+		color: #fff
+
+.btn
+	color: #fff
+	background-color: $accent
+	padding: 14px 40px
+	transition: all .4s ease
+	text-decoration: none
+	border-radius: 24px
+	box-shadow: 0 3px 6px
+	&:hover
+		background-color: #fff
+		color: #111
+	&.btn_white
+		background-color: #fff
+		color: #111
+		&:hover
+			color: #fff
+			background-color: $accent
+
+/*btns*/
+
+#to_banner
+	background-image: url('img/main_banner/background.svg')
+
+#header
+	padding-top: 24px
+	.inner_header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.logo
+			display: block
+			width: 48px
+			height: 48px
+			> img
+				width: 100%
+		.right_side_header
+			display: flex
+			align-items: center
+			.mnu_top
+				list-style-type: none
+				> li
+					display: inline-block
+					position: relative
+					a
+						display: block
+						text-decoration: none
+						font-size: 16px
+						font-weight: 500
+						color: #000
+						transition: color .4s ease
+						padding: 5px 40px 5px 0
+						&:hover
+							color: $accent
+					> .sub_menu
+						position: absolute
+						top: 20px
+						background-color: #fff
+						box-shadow: 0 3px 6px rgba(0, 0, 0, .05)
+						z-index: 10
+						border-radius: 5px
+						padding: 5px 0
+						animation: .6s opac
+						display: none
+						> li
+							display: block
+							> a
+								padding: 3px 10px
+								font-size: 14px
+
+					&.has_sub_menu
+						&:hover > .sub_menu
+							display: block
+						&::after
+							content: ''
+							display: block
+							width: 8px
+							height: 4px
+							background-image: url("../img/arrow.svg")
+							background-size: cover
+							background-repeat: no-repeat
+							background-position: center
+							position: absolute
+							top: 17px
+							right: 25px
+
+@keyframes opac
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+
+#to_banner
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+//height: 100vh
+
+.notif
+	background-color: $light_accent
+	border-radius: 30px
+	padding: 10px 25px
+	display: flex
+	align-items: center
+	max-width: max-content
+	img
+		width: 16px
+		height: auto
+		margin-right: 7px
+	p
+		color: $accent
+	a
+		transition: all .4s ease
+		text-decoration: none
+		border-bottom: 1px solid $accent
+		&:hover
+			color: darken($accent, 10%)
+			border-color: darken($accent, 10%)
+
+.main_banner
+	padding: 150px 0 250px
+	.mb_info
+		> h1
+			color: $dark_accent
+			font-size: 50px
+			font-weight: 900
+			line-height: 1.1
+			max-width: 430px
+			margin-top: 10px
+		> .desc
+			color: $gray
+			margin: 14px 0 44px
+			font-size: 18px
+			line-height: 1.4
+		> .btns
+			display: flex
+			align-items: center
+			> .btn_white
+				margin-left: 16px
+
+section
+	padding: 100px 0
+	&#to_banner
+		padding: 0
+
+#advantages
+	.notif
+		margin: 0 auto
+		img
+			width: 26px
+			height: auto
+			margin-right: 7px
+	.heading_main
+		max-width: 500px
+		margin: 32px auto 48px
+		h2
+			color: $dark_accent
+			font-size: 36px
+			font-weight: 700
+			text-align: center
+			margin-bottom: 12px
+		.description
+			color: $gray
+			text-align: center
+			font-size: 18px
+			line-height: 1.4
+	.row_adv
+		.item_adv
+			> img
+				width: 48px
+				height: 40px
+				border-radius: 50%
+			> .heading
+				color: $dark_accent
+				font-size: 24px
+				margin: 24px 0 16px
+				font-weight: 900
+			> .descr
+				color: $gray
+				font-size: 16px
+				line-height: 1.4
+
+section.information
+	.img-responsive
+		margin: 0 auto
+	.right_info
+		padding-left: 50px
+		> h3
+			color: $dark_accent
+			font-size: 38px
+			font-weight: 900
+			line-height: 1.4
+			margin: 32px 0 16px
+		> .descr
+			color: $gray
+			font-size: 16px
+			line-height: 1.4
+
+#rewievs
+	padding: 300px 200px
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url("../img/rewievs/background.svg")
+	.rev_item
+		text-align: center
+		display: none
+		animation: opac .6s
+		&.active
+			display: block
+		> .quotes
+			color: $dark_accent
+			font-size: 22px
+			margin: 0 auto 16px
+			max-width: 660px
+			height: 150px
+			line-height: 1.4
+		> img
+			width: 80px
+			height: 80px
+			border-radius: 50%
+		> .name
+			margin-top: 16px
+		> .name, > .position
+			color: #111
+			font-weight: 900
+	.line
+		height: 1px
+		width: 100%
+		color: #DEC9FA
+		margin: 56px 0
+	.nav_rev
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		> div
+			cursor: pointer
+			width: 16%
+			filter: grayscale(1)
+			transition: all .4s ease
+			display: flex
+			align-items: center
+			justify-content: center
+			&.active
+				filter: grayscale(0)
+				transform: scale(1.1)
+			> img
+				margin: 0 auto
+
+.btn_form
+	display: block
+	padding: 14px
+	color: #ffffff
+	background-color: $accent
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+	border: none
+	outline: none
+	border-radius: 4px
+	transition: border-radius .4s ease-in-out
+	text-decoration: none
+	cursor: pointer
+	width: 100%
+	font-weight: 600
+	&:hover
+		border-radius: 30px
+
+
+#pre_footer
+	.pf_info
+		> h4
+			color: $dark_accent
+			font-weight: 900
+			font-size: 38px
+			text-align: center
+		> .line_img
+			display: block
+			margin: 42px auto
+		> .img-responsive
+			margin: 0 auto
+	.form_wrapper
+		background-color: $light_accent
+		border-radius: 4px
+		max-width: 480px
+		> form
+			width: 86%
+			margin: 0 auto
+			background-color: #fff
+			padding: 36px 36px 24px
+			border: 1px solid $light_accent
+			transform: translateY(-40px)
+			box-shadow: 0 10px 20px rgba(116, 116, 116, .16)
+			text-align: center
+			> h4
+				color: $dark_accent
+				font-size: 24px
+				margin-bottom: 32px
+				font-weight: 900
+			> input
+				outline: none
+				display: block
+				width: 100%
+				margin-bottom: 16px
+				padding: 14px 24px
+				border-radius: 4px
+				background-color: #ffffff
+				border: 1px solid rgba(137, 137, 162, .5)
+				transition: border-color .4s ease-in-out
+				&::placeholder
+					color: $gray
+					font-size: 16px
+				&:focus
+					border-color: lighten($accent, 10%)
+			> .or
+				margin: 20px auto 15px
+				font-size: 16px
+				color: #000000
+				text-transform: uppercase
+			> a
+				display: block
+				max-width: 200px
+				margin: 0 auto
+				text-decoration: none
+			> .footer_form
+				> .line
+					height: 1px
+					width: 100%
+					background-color: rgba(137, 137, 162, .5)
+					margin: 22px 0
+				> p
+					font-size: 14px
+					color: $gray
+					> a
+						color: #1563FF
+
+#footer
+	background-color: #FBFCFF
+	padding: 60px 0 0
+	.row_flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		.col-footer_1
+			width: 20%
+		.col_footer_2
+			width: 55%
+		.col_footer_3
+			width: 16%
+	.logo_info
+		> a
+			width: 48px
+			height: 48px
+			display: block
+			> img
+				margin: 0 auto
+		> .descr
+			color: $dark_accent
+			font-size: 13px
+			margin: 16px 0
+			line-height: 1.65
+		> .social
+			list-style-type: none
+			> li
+				display: inline-block
+				margin-right: 16px
+				> a
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 16px
+					height: 16px
+					> img
+						transition: transform .4s ease
+					&:hover > img
+						transform: translateY(-8px)
+				&:last-child
+					margin-right: 0
+	.mnu_footer_wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 0 15px
+		> .mnu_footer
+			> ul
+				list-style-type: none
+				> li
+					display: block
+					> a
+						padding: 8px 0
+						display: block
+						text-decoration: none
+						color: $dark_accent
+						transition: color .4s ease
+						font-size: 13px
+						&:hover
+							color: $accent
+	b.heading
+		color: $dark_accent
+		margin-bottom: 10px
+		display: block
+		font-size: 16px
+		font-weight: 900
+	.newsletter
+		> b.heading
+			margin-bottom: 16px
+		> form
+			display: flex
+			align-items: center
+			position: relative
+			background-color: #fff
+			box-shadow: 0 5px 9px rgba(0, 0, 0, .05)
+			> input
+				display: block
+				border: none
+				background-color: transparent
+				outline: none
+				padding: 12px 40px 12px 16px
+				max-width: 100%
+				&::placeholder
+					color: $gray
+					font-size: 14px
+			> button
+				position: absolute
+				top: 12px
+				right: 12px
+				border: none
+				background-color: transparent
+				outline: none
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 25px
+				height: 25px
+	.copyright
+		padding-bottom: 15px
+		color: $dark_accent
+		font-weight: 900
+		font-size: 16px
+		margin-top: 66px
+		text-align: center
+
+.hamburger
+	display: none
+	position: relative
+	right: 15px
+	top: 0
+	.line
+		width: 24px
+		height: 3px
+		background-color: #333
+		display: block
+		margin: 6px auto
+		transition: all 0.3s ease-in-out
+		border-right: 5px
+	&:hover
+		cursor: pointer
+	&.is-active .line
+		&:nth-child(1)
+			transform: translateY(9px) rotate(45deg)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			transition: none
+			transform: translateY(-9px) rotate(-45deg)
+
+.animate_graphic
+	transition: none
+	animation: 1.5s infinite alternate movingAn
+
+@keyframes movingAn
+	from
+		transform: translateX(0)
+	to
+		transform: translateX(10px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

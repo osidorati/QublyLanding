@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>animation-duration</title>
+  <style>
+    .warn {
+      background: #fc0;
+      padding: 10px;
+    }
+    .fadeInLeft {
+      animation-name: fadeInLeft;
+      animation-duration: 0.5s;
+      font-size: 200%;
+    }
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-2000px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="warn fadeInLeft">Вы не учли, что скалярное
+  поле необходимо и достаточно!</div>
+</body>
+</html>
